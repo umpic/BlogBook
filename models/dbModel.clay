@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clay-model clay-version="2.0.0">
+<database-model author="" begin-script="" end-script="" id="50079b:12582699cab:-8000" name="dbModel" sql-dialect-id="jp.azzurri.clay.dialect.HSQLDB_1_7_0_Dialect" version="1.0">
+<schema-list>
+<schema id="47fb00:125845762f6:-7ffe" name="DEFAULT_SCHEMA">
+<table-list>
+<table id="47fb00:125845762f6:-8000" name="User">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ffb" mandatory="false" name="username">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ffa" mandatory="false" name="email">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ff9" mandatory="false" name="password">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f86" mandatory="false" name="first_name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f85" mandatory="false" name="last_name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f82" mandatory="false" name="rating" remarks="trebuie gasit si un sistem de notare a userilor">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fff" name="PK_USER"/>
+</table>
+<table id="47fb00:125845762f6:-7ff8" name="Account">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ff4" mandatory="false" name="daily_digest">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ff3" mandatory="false" name="weekly_review">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7ff2" mandatory="false" name="recomandations">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7ff7" name="PK_ACCOUNT"/>
+</table>
+<table id="47fb00:125845762f6:-7ff1" name="RssFeed">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7feb" mandatory="false" name="rss_feed">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fea" mandatory="false" name="user">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fe6" mandatory="false" name="language">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fe9" mandatory="false" name="aritmetic_rating">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fdd" mandatory="false" name="proportional_rating">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fd3" mandatory="false" name="name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fd2" mandatory="false" name="description">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fc6" mandatory="false" name="url">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7ff0" name="PK_RSSFEED"/>
+</table>
+<table id="47fb00:125845762f6:-7fe5" name="Entry">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fcf" mandatory="false" name="feed">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fe0" mandatory="false" name="rating">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fcc" mandatory="false" name="name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fe1" mandatory="false" name="short_text">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fda" mandatory="false" name="text">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fc9" mandatory="false" name="url">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fe4" name="PK_ENTRY"/>
+</table>
+<table id="47fb00:125845762f6:-7fc5" name="Subscription">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fbf" mandatory="false" name="user">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fbe" mandatory="false" name="feed">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fb9" mandatory="false" name="interest" remarks="o nota a cat de interesat e user-ul de feed (o medie a cat de interesat e de entry-uri)">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column alias="o nota a calitatii feed-urlui din punctul de vedere al userului (o medie)" auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fb6" mandatory="false" name="rating">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fab" mandatory="false" name="subscribed">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fc4" name="PK_SUBSCRIPTION"/>
+</table>
+<table id="47fb00:125845762f6:-7fb5" name="EntryRating">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fb1" mandatory="false" name="user">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fb0" mandatory="false" name="entry">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7faf" mandatory="false" name="interest">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fae" mandatory="false" name="rating">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fb4" name="PK_ENTRYRATING"/>
+</table>
+<table id="47fb00:125845762f6:-7faa" name="Tag">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7fa6" mandatory="false" name="name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fa9" name="PK_TAG"/>
+</table>
+<table id="47fb00:125845762f6:-7fa3" name="Category">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f9f" mandatory="false" name="name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7fa2" name="PK_CATEGORY"/>
+</table>
+<table id="47fb00:125845762f6:-7f9e" name="Interests">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f9a" mandatory="false" name="user">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f99" mandatory="false" name="category">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7f9d" name="PK_INTERESTS"/>
+</table>
+<table id="47fb00:125845762f6:-7f98" name="FeedCategory">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f8e" mandatory="false" name="feed">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f8d" mandatory="false" name="category">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7f97" name="PK_FEEDCATEGORY"/>
+</table>
+<table id="47fb00:125845762f6:-7f94" name="EntryTag">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f8a" mandatory="false" name="entry">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f89" mandatory="false" name="tag">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7f93" name="PK_ENTRYTAG"/>
+</table>
+<table id="47fb00:125845762f6:-7f81" name="UserLanguage">
+<table-description>what languages is the user interested in</table-description>
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f7b" mandatory="false" name="user">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f7a" mandatory="false" name="language">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7f80" name="PK_USERLANGUAGE"/>
+</table>
+<table id="47fb00:125845762f6:-7f79" name="Language">
+<column-list>
+<column auto-increment="false" column-size="10" decimal-digits="0" default-value="" id="47fb00:125845762f6:-7f75" mandatory="false" name="name">
+<data-type name="CHAR" selected-variant-pattern="CHAR(%n)"/>
+</column>
+</column-list>
+<primary-key id="47fb00:125845762f6:-7f78" name="PK_LANGUAGE"/>
+</table>
+</table-list>
+</schema>
+</schema-list>
+</database-model>
+<diagram>
+<table-figure height="129" refid="47fb00:125845762f6:-8000" width="106" x="120" y="105"/>
+<table-figure height="126" refid="47fb00:125845762f6:-7ff8" width="105" x="292" y="105"/>
+<table-figure height="149" refid="47fb00:125845762f6:-7ff1" width="131" x="133" y="317"/>
+<table-figure height="141" refid="47fb00:125845762f6:-7fe5" width="114" x="328" y="321"/>
+<table-figure height="132" refid="47fb00:125845762f6:-7fc5" width="104" x="665" y="320"/>
+<table-figure height="134" refid="47fb00:125845762f6:-7fb5" width="100" x="504" y="321"/>
+<table-figure height="120" refid="47fb00:125845762f6:-7faa" width="103" x="311" y="537"/>
+<table-figure height="111" refid="47fb00:125845762f6:-7fa3" width="99" x="454" y="542"/>
+<table-figure height="128" refid="47fb00:125845762f6:-7f9e" width="103" x="454" y="108"/>
+<table-figure height="113" refid="47fb00:125845762f6:-7f98" width="96" x="616" y="539"/>
+<table-figure height="116" refid="47fb00:125845762f6:-7f94" width="97" x="168" y="543"/>
+<table-figure height="124" refid="47fb00:125845762f6:-7f81" width="110" x="611" y="116"/>
+<table-figure height="116" refid="47fb00:125845762f6:-7f79" width="97" x="749" y="117"/>
+</diagram>
+</clay-model>
